@@ -1,0 +1,178 @@
+/* src/main/resources/css/styles.css */
+
+/* General background and font for the main window */
+.root {
+    -fx-font-family: "Segoe UI", sans-serif; /* Common modern sans-serif font */
+    -fx-background-color: #f0f2f5; /* Light grey background */
+}
+
+/* --- Labels & Titles --- */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.header-text { /* For DialogPane headerText */
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: #2c3e50; /* Darker text for titles */
+    -fx-padding: 10 0 10 0;
+}
+
+
+/* --- Buttons --- */
+.button {
+    -fx-background-color: #007bff; /* Primary blue */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 8 18;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-cursor: hand; /* Changes cursor to a hand on hover */
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #004085; /* Even darker on press */
+}
+
+/* Secondary buttons (e.g., Cancel, Delete if you want different color) */
+.button-secondary {
+    -fx-background-color: #6c757d; /* Grey */
+}
+.button-secondary:hover {
+    -fx-background-color: #5a6268;
+}
+
+.button-danger { /* For delete button */
+    -fx-background-color: #dc3545; /* Red */
+}
+.button-danger:hover {
+    -fx-background-color: #c82333;
+}
+
+
+/* --- Text Fields and Password Fields --- */
+.text-field, .password-field {
+    -fx-background-color: #ffffff; /* White background */
+    -fx-border-color: #ced4da; /* Light grey border */
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused, .password-field:focused {
+    -fx-border-color: #007bff; /* Blue border on focus */
+    -fx-effect: dropshadow(gaussian, rgba(0, 123, 255, 0.2), 5, 0, 0, 0); /* Subtle glow */
+}
+
+/* --- TableView --- */
+.table-view {
+    -fx-background-color: transparent; /* Makes the table background transparent to show root background */
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e9ecef; /* Light header background */
+    -fx-border-radius: 5px 5px 0 0; /* Rounded top corners */
+    -fx-background-radius: 5px 5px 0 0;
+}
+
+.table-view .column-header, .table-view .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-font-weight: bold;
+    -fx-text-fill: #495057; /* Darker text for headers */
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff; /* White row background */
+    -fx-border-color: #e9ecef; /* Light border between rows */
+    -fx-border-width: 0 0 1px 0;
+    -fx-background-insets: 0; /* Remove default insets */
+    -fx-padding: 5px 0 5px 0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #d0e8ff; /* Light blue on selection */
+}
+
+.table-row-cell:even {
+    -fx-background-color: #f8f9fa; /* Slight alternating row color */
+}
+
+.table-view .scroll-bar:vertical .increment-button,
+.table-view .scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+}
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5px;
+}
+
+/* --- CheckBox --- */
+.check-box .box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #ced4da;
+    -fx-border-width: 1px;
+    -fx-border-radius: 3px;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #007bff;
+    -fx-border-color: #007bff;
+}
+
+.check-box:selected .box .mark {
+    -fx-background-color: white;
+}
+
+/* --- Error Label --- */
+.error-label {
+    -fx-text-fill: #dc3545; /* Red for errors */
+    -fx-font-size: 13px;
+}
+
+/* --- Dialog Pane specific styles --- */
+.dialog-pane {
+    -fx-background-color: #f8f9fa; /* Light background for dialogs */
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #e9ecef; /* Header background */
+    -fx-padding: 15px;
+    -fx-border-radius: 8px 8px 0 0;
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #2c3e50;
+}
+
+.dialog-pane .content {
+    -fx-padding: 20px;
+}
+
+.dialog-pane .button-bar {
+    -fx-background-color: #e9ecef;
+    -fx-padding: 10px 15px;
+    -fx-border-radius: 0 0 8px 8px;
+    -fx-background-radius: 0 0 8px 8px;
+}

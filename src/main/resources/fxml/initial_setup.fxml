@@ -7,8 +7,8 @@
       xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.moradipass.controller.LoginController"
       stylesheets="@/css/styles.css"> <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
-    <Label text="Login to MoradiPass" styleClass="header-text"/> <TextField fx:id="usernameField" promptText="Username"/>
-    <PasswordField fx:id="passwordField" promptText="Master Password"/>
-    <Button text="Login" onAction="#handleLogin"/>
+    <Label text="Set Master Password" styleClass="header-text"/> <PasswordField fx:id="masterPasswordField" promptText="Master Password"/>
+    <PasswordField fx:id="confirmMasterPasswordField" promptText="Confirm Master Password"/>
+    <Button text="Set Master Password" onAction="#handleSetMasterPassword"/>
     <Label fx:id="errorLabel" textFill="red" styleClass="error-label"/>
 </VBox>

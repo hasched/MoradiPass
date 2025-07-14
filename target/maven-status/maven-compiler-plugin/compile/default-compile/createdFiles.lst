@@ -1,3 +1,9 @@
-com/moradipass/MainApp.class
+com/moradipass/controller/AddEditDialogController.class
 com/moradipass/controller/LoginController.class
+com/moradipass/data/DatabaseManager.class
+com/moradipass/util/SecurityUtil.class
+com/moradipass/util/PasswordGenerator.class
+com/moradipass/controller/DashboardController.class
+com/moradipass/PasswordEntry.class
+com/moradipass/MainApp.class
 com/moradipass/util/SceneLoader.class
