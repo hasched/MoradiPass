@@ -1,5 +1,23 @@
-# Default ignored files
+# Maven build output directory
+/target/
+
+# Ignore sensitive files (they should NEVER be committed)
+master_key_salt.dat
+master_password.hash
+moradipass.db
+
+# Default ignored files (common for IDEs and build tools)
 /shelf/
 /workspace.xml
-# Environment-dependent path to Maven home directory
 /mavenHomeManager.xml
+
+# Ignore IDE specific files (e.g., IntelliJ IDEA)
+.idea/
+*.iml
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore any log files
+*.log
