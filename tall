@@ -1,0 +1,46 @@
+[33mcommit c8335e28eb4ecffa6c9c2efff2e3d2c8e0927dde[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Abuzar Moradi <abuzarmoradi@hotmail.com>
+Date:   Wed Jul 16 17:23:10 2025 +0200
+
+    Revert "Merge remote-tracking branch 'origin/main'"
+    
+    This reverts commit 394626157e6474a0ff0aa02b624c32f17d6246bc, reversing
+    changes made to 43de5da8fa04d69d4d22d7967c6ae63ccf406ea2.
+
+[33mcommit 394626157e6474a0ff0aa02b624c32f17d6246bc[m
+Merge: 43de5da 1f171e4
+Author: Abuzar Moradi <abuzarmoradi@hotmail.com>
+Date:   Wed Jul 16 17:19:51 2025 +0200
+
+    Merge remote-tracking branch 'origin/main'
+    
+    # Conflicts:
+    #       src/main/resources/fxml/login.fxml
+    #       target/MoradiPass-1.0-SNAPSHOT.jar
+    #       target/classes/fxml/login.fxml
+    #       target/surefire-reports/TEST-com.moradipass.AppTest.xml
+    #       target/surefire-reports/com.moradipass.AppTest.txt
+
+[33mcommit 43de5da8fa04d69d4d22d7967c6ae63ccf406ea2[m
+Author: Abuzar Moradi <abuzarmoradi@hotmail.com>
+Date:   Tue Jul 15 01:06:37 2025 +0200
+
+    Modified the GUI
+
+[33mcommit 1f171e4bf30a941c052c7eca2a5be6f34495c53f[m
+Author: Abuzar Moradi <abuzarmoradi@hotmail.com>
+Date:   Tue Jul 15 01:06:37 2025 +0200
+
+    implemented the first version of the app
+
+[33mcommit 419489d069b529f920ce6507428a90d0235ab2e4[m
+Author: Abuzar Moradi <abuzarmoradi@hotmail.com>
+Date:   Mon Jul 14 23:47:30 2025 +0200
+
+    configured basic structure of the project
+
+[33mcommit fa00afc4c2ad3061724514a840e84ef3aa8eae5f[m
+Author: Venom <55551703+hasched@users.noreply.github.com>
+Date:   Mon Jul 14 23:10:15 2025 +0200
+
+    Initial commit
